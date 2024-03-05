@@ -6,10 +6,7 @@ using UnityEngine.Playables;
 public class TriggerEvent : MonoBehaviour
 {
     public GameObject timeLine;
-    public GameObject player;
     PlayableDirector director;
-
-    CameraFollow cameraFollow;
 
     // Start is called before the first frame update
     void Start()
