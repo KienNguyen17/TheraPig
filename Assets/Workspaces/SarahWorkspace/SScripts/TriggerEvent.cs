@@ -23,15 +23,9 @@ public class TriggerEvent : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision) {
         Debug.Log("Something");
         director.Play();
-        
+    }
 
-    
-        //get a reference to the pig
-        // get the CameraFollow component
-            // enabled as false before director plays
-                // director.stopped (to reenable it)
-            // reenable after playing 
-
-        
+    void OnTriggerExit2D (Collider2D collision) {
+        GetComponent<BoxCollider2D>().enabled = false;
     }
 }
