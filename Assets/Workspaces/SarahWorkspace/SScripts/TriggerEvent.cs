@@ -6,16 +6,16 @@ using UnityEngine.Events;
 
 public class TriggerEvent : MonoBehaviour
 {
-    // public UnityEvent startAnimation, endAnimation;
+    public UnityEvent startAnimation, endAnimation;
     public GameObject timeLine;
-    // public GameObject player;
+    public GameObject player;
     PlayableDirector director;
 
     // Start is called before the first frame update
     void Start()
     {
         director = timeLine.GetComponent<PlayableDirector>();
-        // director.stopped += OnPlayableDirector;
+        director.stopped += OnPlayableDirector;
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class TriggerEvent : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision) {
         Debug.Log("Something");
-        // startAnimation.Invoke();
+        startAnimation.Invoke();
         director.Play();
     }
 
@@ -34,17 +34,9 @@ public class TriggerEvent : MonoBehaviour
         GetComponent<BoxCollider2D>().enabled = false;
     }
 
-    // void OnPlayableDirector(PlayableDirector direct) {
-    //     endAnimation.Invoke(); 
-    // }
+    void OnPlayableDirector(PlayableDirector direct) {
+        endAnimation.Invoke(); 
+    }
 
-    // public void EnableCharacter() {
-    //     // allow the character's movement to be enabled
-    //     player.GetComponent<CharacterMovement>().enabled = true;
-    // }
-
-    // public void DisableCharacter() {
-    //     // stop the character's movement 
-    //     player.position = new Vector2(300,200);
-    // }
+    
 }

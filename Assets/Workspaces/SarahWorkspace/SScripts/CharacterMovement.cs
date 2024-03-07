@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    private float speed = 5.0f;
+    private float defaultSpeed = 5.0f;
+    private float speed;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Vector2 movementDirection;
@@ -12,6 +13,7 @@ public class CharacterMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = defaultSpeed;
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -32,6 +34,15 @@ public class CharacterMovement : MonoBehaviour
 
     void FixedUpdate() {
         rb.velocity = movementDirection * speed;
+    }
+
+    public void EnableCharacter() {
+        // allow the character's movement to be enabled
+        speed = defaultSpeed;
+    }
+
+    public void DisableCharacter() {
+        speed = 0;        
     }
 }
 
