@@ -7495,6 +7495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a91b259466ce466c95279f0f2bae268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newSprite: {fileID: 796437958, guid: 170144878fd714cedb7467238ee6c840, type: 3}
 --- !u!95 &259085859
 Animator:
   serializedVersion: 5
