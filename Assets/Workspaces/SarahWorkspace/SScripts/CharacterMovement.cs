@@ -37,7 +37,6 @@ public class CharacterMovement : MonoBehaviour
     }
 
     public void EnableCharacter() {
-        // allow the character's movement to be enabled
         speed = defaultSpeed;
     }
 
