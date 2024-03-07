@@ -16,16 +16,15 @@ public class RubberDuckInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Q)) {
+            Debug.Log("Q has been clicked");
+            interactedObject.enabled = false;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
         Debug.Log("You hit the duck.");
         interactedObject.enabled = true;
         
-    }
-
-    public void YesButtonClicked() {
-        interactedObject.enabled = false;
     }
 }
