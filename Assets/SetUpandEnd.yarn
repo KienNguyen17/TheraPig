@@ -1,0 +1,79 @@
+﻿title: Start
+group: firstDay
+---
+Kyle: Mom? You there?
+Nancy: I'll respond to your email first thing tomorr-
+Nancy: Kyle? 
+Nancy: I'll call you right back, Jeremy. 
+Nancy: When did you get home?
+Kyle: Just now.
+Nancy: Why didn't you call me? 
+Kyle: I told you when I was landing. I waited 30 minutes. Your phone went right to voicemail.
+Nancy: I just got off work. 
+Nancy: Go wash up, I'll make dinner.
+Kyle: I'm not hungry.
+===
+
+title: secondSetUp
+group: secondDay
+---
+Nancy: I'm off to work. Don't stay in bed all day.
+Kyle: I know, I know.
+
+/// this variable determines the ending of the second day
+<<declare $secondEnd=false>>
+===
+
+title: secondGoodEnd
+group: secondDay
+---
+<<set $secondEnd to true>>
+Nancy: Kyle, help me make dinner.
+Kyle: I'm busy, Mom. 
+Nancy: What are you doing? 
+Kyle: I just… I have some work to do.
+Nancy: Alright. Well, get ready for dinner. I'm making your favorite stew. 
+===
+
+title: secondBadEnd
+group: secondDay
+---
+<<set $secondEnd to false>>
+Nancy: Kyle, help me make dinner.
+Nancy: Aish, you're still in bed? It's dinner time.
+Kyle: Alright, I'll be up in a minute.
+Nancy: Don't be like this all winter.
+===
+
+title: thirdSetUp
+group: thirdDay
+---
+<<if $secondEnd>>
+    Kyle: I'm heading out, Mom.
+    Nancy: Where are you going?
+    Kyle: It's something I'm working on. I'll tell you about it when I get it.
+    Nancy: Guess we're both busy now, you'll have to guard the house, piggy.
+    Pig: *oink oink*
+    Nancy: Maybe it'll give me more time to prepare for his birthday. But now, I have work to do too.
+<<else>>
+    Nancy (to pig): He's almost 21 now and still lying in bed all day. You better watch over him for me.
+    Pig: *oink oink*
+    Nancy: Alright, I've got work to attend to.
+<<endif>>
+===
+
+title: thirdGoodEnd
+group: thirdDay
+---
+Nancy: Thank you, little piggy. I'll send these in tomorrow.
+===
+
+title: thirdBadEnd
+group: thirdDay
+---
+Kyle: Mom, were you gonna pay these bills? 
+Nancy: Oh give me that. I was gonna get to it.
+Kyle: They'll cut off our heating again if you keep forgetting to pay the bill. 
+Nancy: Well if you have nothing better to do, you can help me with them.
+===
+

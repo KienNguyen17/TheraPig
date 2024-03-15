@@ -26,5 +26,6 @@ public class paperController : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
         Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
         transform.position = new Vector2(worldPos.x, worldPos.y);
+        
     }
 }
