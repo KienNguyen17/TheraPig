@@ -61,7 +61,6 @@ public class InventoryManager : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 
             if (slot != null && slot.heldItem == null) {
                 slot.SetHeldItem(draggedObject);
-
             }
             else if (slot != null && slot.heldItem == null) {
                 lastObjectSlot.GetComponent<InventorySlot>().SetHeldItem(slot.heldItem);
