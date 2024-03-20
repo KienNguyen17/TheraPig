@@ -9677,7 +9677,7 @@ GameObject:
   - component: {fileID: 1905856643}
   m_Layer: 0
   m_Name: RubberDuck
-  m_TagString: Untagged
+  m_TagString: PickableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9864,7 +9864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20d9cd88d26fe4ec48872ecba31337b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemScriptableObject: {fileID: 11400000, guid: 8900fce5822a04f758ac4392ea151f96, type: 2}
 --- !u!1 &2019281955
 GameObject:
   m_ObjectHideFlags: 0
