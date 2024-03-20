@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerInventoryNEW : MonoBehaviour
 {
-    public ItemSONEW itemPicked;
+    // Using the scriptable object in the inventory
+    public List<ItemSONEW> itemsPicked = new();
     private bool isCollided;
+    private SpriteRenderer renderer;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,13 +23,14 @@ public class PlayerInventoryNEW : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision) {
         // if the player collides with the PickableObject, set isCollided to true
-        if (collision.gameObject.tag == "PickableObject") {
-
+        if (collision.gameObject.tag == "PickableObject") { // this should be a ScriptableObject?
+            Debug.Log("You hit a scriptable object");
             // set isCollided to true then
             isCollided = true;
 
             // if the player clicks "E" while isCollided is true
-            if (Input.GetKey(KeyCode.E)) {
+            if (Input.GetKey(KeyCode.E)) { 
+                renderer.enabled = false;
                 // disable the sprite that has a OnTrigger collision body
                 // Add the disabled sprite to the inventory (AddItem)
 
