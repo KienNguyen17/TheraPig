@@ -8,13 +8,15 @@ public class interactive : MonoBehaviour
 {
     SpriteRenderer renderer;
     public bool isInteractible;
-    DialogueRunner runner;
-    public UnityEvent intoInventory;
+    public UnityEvent triggerDialogue;
+    // DialogueRunner runner;
+    // public UnityEvent intoInventory;
+
     // Start is called before the first frame update
     void Start()
     {
         renderer = GetComponent<SpriteRenderer>();
-        runner = FindObjectOfType<DialogueRunner>();
+        // runner = FindObjectOfType<DialogueRunner>();
     }
 
     // Update is called once per frame
@@ -39,8 +41,8 @@ public class interactive : MonoBehaviour
     void PickedUp() {
         if (isInteractible) {
             isInteractible = false;
-            runner.StartDialogue("secondBadEnd");
-            intoInventory.Invoke();
+            // runner.StartDialogue("Start");
+            triggerDialogue.Invoke();
             renderer.enabled = false;
         }
     }

@@ -12,6 +12,7 @@ Kyle: I told you when I was landing. I waited 30 minutes. Your phone went right 
 Nancy: I just got off work. 
 Nancy: Go wash up, I'll make dinner.
 Kyle: I'm not hungry.
+<<advance DialogueManager secondSetUp>>
 ===
 
 title: secondSetUp
