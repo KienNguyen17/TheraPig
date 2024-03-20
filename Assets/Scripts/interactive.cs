@@ -38,7 +38,7 @@ public class interactive : MonoBehaviour
     void PickedUp() {
         if (isInteractible) {
             isInteractible = false;
-            // triggerDialogue.Invoke();
+            triggerDialogue.Invoke();
             intoInventory.Invoke();
             renderer.enabled = false;
         }
