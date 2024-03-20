@@ -693,7 +693,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInteractible: 0
-  runner: {fileID: 0}
+  intoInventory:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1754233649
 PrefabInstance:
   m_ObjectHideFlags: 0
