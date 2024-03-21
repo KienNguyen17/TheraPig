@@ -23,7 +23,7 @@ public class RubberDuckInteraction : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
-        Debug.Log("You hit the duck.");
+        // Debug.Log("You hit the duck.");
         interactedObject.enabled = true;
         
     }
