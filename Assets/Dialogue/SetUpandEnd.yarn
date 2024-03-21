@@ -2,6 +2,11 @@
 group: firstDay
 ---
 Kyle: Mom? You there?
+<<advance DialogueManager StartNancy>>
+===
+title: StartNancy
+group: firstDay
+---
 Nancy: I'll respond to your email first thing tomorr-
 Nancy: Kyle? 
 Nancy: I'll call you right back, Jeremy. 
