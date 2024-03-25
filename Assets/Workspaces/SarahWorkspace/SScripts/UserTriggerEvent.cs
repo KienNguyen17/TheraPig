@@ -11,6 +11,8 @@ public class UserTriggerEvent : MonoBehaviour
     PlayableDirector director;
     bool qPressed;
     bool animationPlayedAlready = false;
+
+    public UnityEvent triggerDialogue;
     // bool animationStarted = false;
     void Start()
     {
@@ -25,6 +27,7 @@ public class UserTriggerEvent : MonoBehaviour
         if (!animationPlayedAlready && qPressed && Input.GetKey(KeyCode.Q)) {
             startAnimation.Invoke();
             director.Play();
+            triggerDialogue.Invoke();
             animationPlayedAlready = true;
         }
     }
