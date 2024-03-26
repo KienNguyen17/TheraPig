@@ -7,14 +7,18 @@ Pig: *oink oink*
 title: StartKyle
 group: firstDay
 ---
+<<animate DialogueManager>>
 Kyle: Mom? You there?
 <<advance DialogueManager StartNancy>>
 ===
 title: StartNancy
 group: firstDay
 ---
+<<animate1 DialogueManager>>
 Nancy: I'll respond to your email first thing tomorr-
+<<animate2 DialogueManager>>
 Nancy: Kyle? 
+<<animate3 DialogueManager>>
 Nancy: I'll call you right back, Jeremy. 
 Nancy: When did you get home?
 Kyle: Just now.
