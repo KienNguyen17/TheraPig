@@ -15,8 +15,10 @@ public class DialogueAnimation : MonoBehaviour
     bool animationPlayedAlready = false;
 
     public UnityEvent triggerDialogue;
+
 void Start()
     {
+        // gameObject.AddComponent(this);
         director = timeLine.GetComponent<PlayableDirector>();
         director.stopped += OnPlayableDirector;
     }
@@ -28,8 +30,10 @@ void Start()
         if (!animationPlayedAlready && qPressed && Input.GetKey(KeyCode.Q)) {
             AnimationEnter();
             triggerDialogue.Invoke();
-            
-        }
+            // call the DialogueAnimation2
+            // gameObject.AddComponent<DialogueAnimation2>();
+            // Destroy(this);
+        } 
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
@@ -38,7 +42,7 @@ void Start()
     }
 
     void OnPlayableDirector(PlayableDirector direct) {
-        endAnimation.Invoke(); 
+        endAnimation.Invoke();
     }
 
     // Have the animation play first, then when the animation is done, play the next dialogue
@@ -46,7 +50,7 @@ void Start()
         startAnimation.Invoke();
         director.Play();
         animationPlayedAlready = true;
-        DialogueAnimation2.Invoke();
+        // call the second animation!
     }
 
 }

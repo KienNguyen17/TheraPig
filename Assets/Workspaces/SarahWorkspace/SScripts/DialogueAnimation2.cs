@@ -15,24 +15,31 @@ public class DialogueAnimation2 : MonoBehaviour
     bool animationPlayedAlready = false;
 
     public UnityEvent triggerDialogue;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        director = timeLine.GetComponent<PlayableDirector>();
+        director.stopped += OnPlayableDirector;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q)) {
+        if (Input.GetKey(KeyCode.Q) && animationPlayedAlready) {
             StartSecondAnimation();
             triggerDialogue.Invoke();
         }
     }
+    
+     void OnPlayableDirector(PlayableDirector direct) {
+        endAnimation.Invoke(); 
+    }
 
     // [YarnCommand("animate1")]
-    void StartSecondAnimation() {
-        secondAnimation.Invoke();
+    public void StartSecondAnimation() {
+        startAnimation.Invoke();
         director.Play();
+        animationPlayedAlready = true;
     }
 }
