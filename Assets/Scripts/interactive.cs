@@ -11,7 +11,7 @@ public class interactive : MonoBehaviour
     SpriteRenderer renderer;
     public bool isInteractible;
     public UnityEvent triggerDialogue;
-    public UnityEvent triggerInstruction;
+    // public UnityEvent triggerInstruction;
     public UnityEvent intoInventory;
     public TextMeshProUGUI instruction;
 
@@ -32,13 +32,13 @@ public class interactive : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision) {
         renderer.color = new Color(1,1,1,0.3f);
         isInteractible = true;
-        triggerInstruction.Invoke();
+        // triggerInstruction.Invoke();
     }
 
     void OnTriggerExit2D(Collider2D collision) {
         renderer.color = new Color(1,1,1,1);
         isInteractible = false;
-        triggerInstruction.Invoke();
+        // triggerInstruction.Invoke();
     }
 
     void PickedUp() {

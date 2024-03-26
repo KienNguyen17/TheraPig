@@ -6,6 +6,7 @@ using TMPro;
 public class instructionManager : MonoBehaviour
 {
     TMP_Text renderer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,8 @@ public class instructionManager : MonoBehaviour
     }
 
     public void ToggleActive() {
-        renderer.enabled = !renderer.enabled;
+        GetComponent<Renderer>().enabled = !GetComponent<Renderer>().enabled;
+
     }
 
 }
