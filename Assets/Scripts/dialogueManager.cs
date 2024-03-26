@@ -12,6 +12,7 @@ public class dialogueManager : MonoBehaviour
     {
         currentNode = "Start";
         runner = FindObjectOfType<DialogueRunner>();
+        Invoke("RunDialogue", 1.5f);
     }
 
     // Update is called once per frame
