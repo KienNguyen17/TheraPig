@@ -9,8 +9,8 @@ public class Inventory : ScriptableObject
 
     public void AddObject(GameObject item) {
         items.Add(item);
-        Debug.Log(item.name);
-        Debug.Log(items.Count);
+        // Debug.Log(item.name);
+        // Debug.Log(items.Count);
     }
 
     public void RemoveObject(GameObject item) {
