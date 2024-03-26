@@ -14,7 +14,7 @@ public class DialogueAnimation2 : MonoBehaviour
     bool qPressed;
     bool animationPlayedAlready = false;
 
-    public UnityEvent triggerDialogue;
+    // public UnityEvent triggerDialogue;
     
     // Start is called before the first frame update
     void Start()
@@ -28,10 +28,10 @@ public class DialogueAnimation2 : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Q) && animationPlayedAlready) {
             StartSecondAnimation();
-            triggerDialogue.Invoke();
+            // triggerDialogue.Invoke();
         }
     }
-    
+
      void OnPlayableDirector(PlayableDirector direct) {
         endAnimation.Invoke(); 
     }

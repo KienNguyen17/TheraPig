@@ -26,13 +26,18 @@ void Start()
     // Update is called once per frame
     void Update()
     { 
-        // how to get it so the user can only see this particular animation once
         if (!animationPlayedAlready && qPressed && Input.GetKey(KeyCode.Q)) {
             AnimationEnter();
             triggerDialogue.Invoke();
-            // call the DialogueAnimation2
-            // gameObject.AddComponent<DialogueAnimation2>();
-            // Destroy(this);
+            // when the space is entered 
+            if (Input.GetKey(KeyCode.Space)) {
+                // go to a different timeline (different C# file)
+                    // the sheet should show what we want to happen
+                        // start a timeline
+                        // move to the next line
+            }
+                // go to the next node and synchronize the timeline that's with it 
+                // move to the next animation which has the dialogue boxes
         } 
     }
 
