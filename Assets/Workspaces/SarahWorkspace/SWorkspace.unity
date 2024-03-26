@@ -10355,9 +10355,9 @@ MonoBehaviour:
   startAnimation:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 35447725}
-        m_TargetAssemblyTypeName: dialogueManager, Assembly-CSharp
-        m_MethodName: RunDialogue
+      - m_Target: {fileID: 1248034471}
+        m_TargetAssemblyTypeName: CharacterMovement, Assembly-CSharp
+        m_MethodName: DisableCharacter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10366,8 +10366,25 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
-  secondAnimation:
+        m_CallState: 2
+  endAnimation:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1248034471}
+        m_TargetAssemblyTypeName: CharacterMovement, Assembly-CSharp
+        m_MethodName: EnableCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  timeLine: {fileID: 2072369764}
+  player: {fileID: 1248034469}
+  triggerDialogue:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 35447725}
@@ -10381,12 +10398,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-  endAnimation:
-    m_PersistentCalls:
-      m_Calls: []
-  timeLine: {fileID: 2072369764}
-  player: {fileID: 1248034469}
+        m_CallState: 1
 --- !u!1 &2019281955
 GameObject:
   m_ObjectHideFlags: 0
