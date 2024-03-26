@@ -10365,6 +10365,10 @@ PrefabInstance:
       propertyPath: triggerDialogue.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: dialogueManager, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8528490940821610326, guid: 311422fc83d004e66819423cd5423349, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -33,10 +33,16 @@ public class spriteSwapper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //replace with more relevant event listener
-        if(Input.GetMouseButtonDown(0))
-        {
-            ChangeSprite();
-        }       
+    
+    }
+
+    void OnTriggerEnter2D()
+    {
+        ChangeSprite();
+    }
+
+    void OnTriggerExit2D()
+    {
+        ChangeSprite();
     }
 }
