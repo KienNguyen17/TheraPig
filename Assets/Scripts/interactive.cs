@@ -53,6 +53,8 @@ public class interactive : MonoBehaviour
             triggerDialogue.Invoke();
             intoInventory.Invoke();
             renderer.enabled = false;
+            // disable the item's collision body 
+            GetComponent<BoxCollider2D>().enabled = false;
             pickedUpItem = true;
         }
     }
@@ -65,6 +67,7 @@ public class interactive : MonoBehaviour
             renderer.transform.position = target.position + new Vector3(0,-1,0);
             isInteractible = true;
             pickedUpItem = false;
+            GetComponent<BoxCollider2D>().enabled = true;
         }
     }
 }
