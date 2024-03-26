@@ -10,9 +10,12 @@ public class interactive : MonoBehaviour
 {
     SpriteRenderer renderer;
     public bool isInteractible;
+    bool pickedUpItem;
     public UnityEvent triggerDialogue;
     public UnityEvent triggerInstruction;
     public UnityEvent intoInventory;
+    public UnityEvent outInventory;
+    public Transform target;
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +26,11 @@ public class interactive : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q)) {
+        if (Input.GetKey(KeyCode.Q) && isInteractible) {
             PickedUp();
+        }
+        else if (Input.GetKey(KeyCode.Tab)) {
+            Dropped();
         }
     }
 
@@ -40,16 +46,25 @@ public class interactive : MonoBehaviour
         // triggerInstruction.Invoke();
     }
 
+    // there might be an issue if the user tries to pick up more than one object
     void PickedUp() {
         if (isInteractible) {
             isInteractible = false;
             triggerDialogue.Invoke();
             intoInventory.Invoke();
             renderer.enabled = false;
+            pickedUpItem = true;
         }
     }
 
-    void Dropped() {
+    public void Dropped() {
         //TODO: add a way to drop the object
+        if (pickedUpItem) {
+            outInventory.Invoke(); // do I even need to have something that removes the item from the ScriptableObject?
+            renderer.enabled = true;
+            renderer.transform.position = target.position + new Vector3(0,-1,0);
+            isInteractible = true;
+            pickedUpItem = false;
+        }
     }
 }
