@@ -46,6 +46,7 @@ void Start()
         startAnimation.Invoke();
         director.Play();
         animationPlayedAlready = true;
+        DialogueAnimation2.Invoke();
     }
 
 }
