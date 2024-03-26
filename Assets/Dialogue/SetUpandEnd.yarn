@@ -1,6 +1,12 @@
 ﻿title: Start
 group: firstDay
 ---
+Pig: *oink oink*
+<<advance DialogueManager StartKyle>>
+===
+title: StartKyle
+group: firstDay
+---
 Kyle: Mom? You there?
 <<advance DialogueManager StartNancy>>
 ===
