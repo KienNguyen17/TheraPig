@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Workspaces/MainWorkspace/Main Scene.unity
     guid: 61f1dabe8e4e843bb8c2083a8a0392bc
   - enabled: 1
-    path: Assets/Workspaces/KienWorkspace/Menu.unity
+    path: Assets/Workspaces/MainWorkspace/Menu.unity
     guid: fd1ef956f0fa747448f5461fbba32b21
   m_configObjects: {}
