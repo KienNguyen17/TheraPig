@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class spriteSwapper : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class spriteSwapper : MonoBehaviour
     public Sprite originalSprite;
     public Sprite newSprite;
     bool highlightState;
+    public UnityEvent triggerDialogue;
+    public UnityEvent triggerInstruction;
 
     void ChangeSprite()
     {
@@ -33,12 +36,15 @@ public class spriteSwapper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
+        if (Input.GetKey(KeyCode.Q) && highlightState) {
+            triggerDialogue.Invoke();
+        }
     }
 
     void OnTriggerEnter2D()
     {
         ChangeSprite();
+        triggerInstruction.Invoke();
     }
 
     void OnTriggerExit2D()

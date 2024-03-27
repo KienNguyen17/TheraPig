@@ -23,12 +23,20 @@ public class instructionManager : MonoBehaviour
     public void Flutter() {
         if (!isFluttering) {
             renderer.color = new Color(1,1,1,1);
-            StartCoroutine(Disable());    
+            StartCoroutine(Fade());    
         }
         
     }
 
-    public IEnumerator Disable() {
+    public void Enable() {
+        renderer.color = new Color(1,1,1,1);
+    }
+
+    public void Disable() {
+        renderer.color = new Color(1,1,1,0);
+    }
+
+    public IEnumerator Fade() {
         isFluttering = true;
         for (float i=1; i>0; i-=0.01f) {
             renderer.color = new Color(1,1,1,i);
