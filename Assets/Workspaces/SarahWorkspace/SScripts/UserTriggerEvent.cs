@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 using UnityEngine.Events;
 public class UserTriggerEvent : MonoBehaviour
 {
-    public UnityEvent startAnimation, endAnimation;
+    public UnityEvent startAnimation, secondAnimation, endAnimation;
     public GameObject timeLine;
     public GameObject player;
     PlayableDirector director;
@@ -25,13 +25,10 @@ public class UserTriggerEvent : MonoBehaviour
     { 
         // how to get it so the user can only see this particular animation once
         if (!animationPlayedAlready && qPressed && Input.GetKey(KeyCode.Q)) {
-            startAnimation.Invoke();
-            director.Play();
-            triggerDialogue.Invoke();
-            animationPlayedAlready = true;
+            // AnimationEnter();
+            
         }
     }
-
 
     void OnTriggerEnter2D(Collider2D collision) {
         Debug.Log("You hit THE duck.");
@@ -41,5 +38,12 @@ public class UserTriggerEvent : MonoBehaviour
     void OnPlayableDirector(PlayableDirector direct) {
         endAnimation.Invoke(); 
     }
+
+    // Have the animation play first, then when the animation is done, play the next dialogue
+    // void AnimationEnter() {
+    //     startAnimation.Invoke();
+    //     director.Play();
+    //     animationPlayedAlready = true;
+    // }
 
 }

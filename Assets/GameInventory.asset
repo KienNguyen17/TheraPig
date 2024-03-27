@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d57411e2a2b14f5ba54f27ef32e3a7d, type: 3}
   m_Name: GameInventory
   m_EditorClassIdentifier: 
-  items: []
+  newItem: {fileID: 0}
