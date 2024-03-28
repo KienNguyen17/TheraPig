@@ -28,6 +28,10 @@ public class dialogueManager : MonoBehaviour
         runner.StartDialogue(currentNode);
     }
 
+    public void RunNode(string node) {
+        runner.StartDialogue(node);
+    }
+
     [YarnCommand("advance")]
     public void AdvanceNode(string newNode) {
         currentNode = newNode;

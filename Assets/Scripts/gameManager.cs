@@ -18,6 +18,6 @@ public class gameManager : MonoBehaviour
     }
 
     public void LoadScene() {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(1);
     }
 }
