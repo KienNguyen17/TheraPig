@@ -22,6 +22,9 @@ public class dialogueManager : MonoBehaviour
     }
 
     public void RunDialogue() {
+        if (runner.IsDialogueRunning){
+            runner.Stop();
+        }
         runner.StartDialogue(currentNode);
     }
 
