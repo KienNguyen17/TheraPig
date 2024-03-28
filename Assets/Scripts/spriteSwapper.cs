@@ -8,7 +8,8 @@ public class spriteSwapper : MonoBehaviour
     SpriteRenderer spriteRenderer;
     public Sprite originalSprite;
     public Sprite newSprite;
-    bool highlightState;
+    public bool highlightState;
+    public bool isInteractible=false;
     public UnityEvent triggerDialogue;
     public UnityEvent triggerInstruction;
 
@@ -31,12 +32,13 @@ public class spriteSwapper : MonoBehaviour
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         highlightState = false;
+        isInteractible = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q) && highlightState) {
+        if (Input.GetKey(KeyCode.Q) && isInteractible) {
             triggerDialogue.Invoke();
         }
     }
@@ -45,10 +47,12 @@ public class spriteSwapper : MonoBehaviour
     {
         ChangeSprite();
         triggerInstruction.Invoke();
+        isInteractible = true;
     }
 
     void OnTriggerExit2D()
     {
         ChangeSprite();
+        isInteractible = false;
     }
 }

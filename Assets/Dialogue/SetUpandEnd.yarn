@@ -2,6 +2,8 @@
 group: firstDay
 ---
 Pig: *oink oink*
+<<declare $secondEnd=false>>
+<<declare $thirdStart=false>>
 <<advance DialogueManager StartKyle>>
 ===
 title: StartKyle
@@ -30,34 +32,33 @@ Nancy: I'm off to work. Don't stay in bed all day.
 Kyle: I know, I know.
 
 /// this variable determines the ending of the second day
-<<declare $secondEnd=false>>
+<<advance DialogueManager secondEnd>>
 ===
 
-title: secondGoodEnd
+title: secondEnd
 group: secondDay
 ---
-<<set $secondEnd to true>>
-Nancy: Kyle, help me make dinner.
-Kyle: I'm busy, Mom. 
-Nancy: What are you doing? 
-Kyle: I just… I have some work to do.
-Nancy: Alright. Well, get ready for dinner. I'm making your favorite stew. 
-===
-
-title: secondBadEnd
-group: secondDay
----
-<<set $secondEnd to false>>
-Nancy: Kyle, help me make dinner.
-Nancy: Aish, you're still in bed? It's dinner time.
-Kyle: Alright, I'll be up in a minute.
-Nancy: Don't be like this all winter.
+<<if $secondEnd>>
+    <<set $thirdStart to true>>
+    Nancy: Kyle, help me make dinner.
+    Kyle: I'm busy, Mom. 
+    Nancy: What are you doing? 
+    Kyle: I just… I have some work to do.
+    Nancy: Alright. Well, get ready for dinner. I'm making your favorite stew. 
+<<else>>
+    <<set $thirdStart to false>>
+    Nancy: Kyle, help me make dinner.
+    Nancy: Aish, you're still in bed? It's dinner time.
+    Kyle: Alright, I'll be up in a minute.
+    Nancy: Don't be like this all winter.
+<<endif>>
+<<advance DialogueManager thirdSetUp>>
 ===
 
 title: thirdSetUp
 group: thirdDay
 ---
-<<if $secondEnd>>
+<<if $thirdStart>>
     Kyle: I'm heading out, Mom.
     Nancy: Where are you going?
     Kyle: It's something I'm working on. I'll tell you about it when I get it.
