@@ -18,15 +18,15 @@ public class newspaperDrop : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D collision) {
-        if(collision && collision.GetComponent<Collider>().CompareTag("Newspaper")){
+    void OnTriggerStay2D(Collider2D collision) {
+        if(collision.GetComponent<Collider2D>().CompareTag("Newspaper")){
             isGoodEnd = true;
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision) {
-        if(collision && collision.GetComponent<Collider>().CompareTag("Newspaper")){
-            isGoodEnd = false;
-        }
-    }
+    // void OnTriggerExit2D(Collider2D collision) {
+    //     if(collision.GetComponent<Collider2D>().CompareTag("Newspaper")){
+    //         isGoodEnd = false;
+    //     }
+    // }
 }
