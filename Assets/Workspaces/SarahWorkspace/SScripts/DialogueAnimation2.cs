@@ -8,27 +8,38 @@ using Yarn.Unity;
 public class DialogueAnimation2 : MonoBehaviour
 {
     public UnityEvent startAnimation, endAnimation;
-    public GameObject timeLine;
-    public GameObject player;
-    PlayableDirector director;
+    public GameObject timeLine, timeLine2;
+    PlayableDirector director, director2;
     bool qPressed;
-    bool animationPlayedAlready = false;
+    // bool FirstAnimationPlayedAlready = false;
+    // public string currentNode;
+    // DialogueRunner runner;
+    public UnityEvent triggerDialogue;
 
     // public UnityEvent triggerDialogue;
-    
-    // Start is called before the first frame update
+    // public string currentNode;
     void Start()
     {
+        // currentNode = "StartKyle";
+
         director = timeLine.GetComponent<PlayableDirector>();
         director.stopped += OnPlayableDirector;
+        director2 = timeLine2.GetComponent<PlayableDirector>();
+        director2.stopped += OnPlayableDirector;
+
+        // runner = FindObjectOfType<DialogueRunner>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q) && animationPlayedAlready) {
+        if (Input.GetKey(KeyCode.Q) && qPressed) {
+            StartFirstAnimation();
+            // runner.StartDialogue(currentNode);
+            triggerDialogue.Invoke();
             StartSecondAnimation();
-            // triggerDialogue.Invoke();
+            // if (currentNode == "StartNancy") {
+                // StartSecondAnimation();
+            // }
         }
     }
 
@@ -36,10 +47,30 @@ public class DialogueAnimation2 : MonoBehaviour
         endAnimation.Invoke(); 
     }
 
-    // [YarnCommand("animate1")]
-    public void StartSecondAnimation() {
+    void OnTriggerEnter2D(Collider2D collision) {
+        Debug.Log("You hit THEEE duck.");
+        qPressed = true;
+    }
+
+    // [YarnCommand("advance")]
+    public void StartFirstAnimation() {
         startAnimation.Invoke();
+        // runner.StartDialogue(currentNode);
         director.Play();
-        animationPlayedAlready = true;
+    }
+
+    // [YarnCommand("advance")]
+    // public void AdvanceNode(string newNode) {
+    //     currentNode = newNode;
+    // }
+
+    [YarnCommand("advance")]
+    public void StartSecondAnimation() {
+        // Invoke("AdvanceNode", 0.5f);
+        Debug.Log("In the second scene now");
+        startAnimation.Invoke();
+        director2.Play();
+        // animationPlayedAlready = true;
+        // triggerDialogue.Invoke();
     }
 }

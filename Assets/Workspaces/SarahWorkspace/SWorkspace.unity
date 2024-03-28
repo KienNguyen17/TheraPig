@@ -9674,7 +9674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1480572965
 Animator:
   serializedVersion: 5
@@ -10163,6 +10163,7 @@ GameObject:
   - component: {fileID: 1905856641}
   - component: {fileID: 1905856640}
   - component: {fileID: 1905856643}
+  - component: {fileID: 1905856644}
   m_Layer: 0
   m_Name: RubberDuck
   m_TagString: PickableObject
@@ -10347,7 +10348,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905856637}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33c20d77f65dd456081ec95823dfa950, type: 3}
   m_Name: 
@@ -10418,6 +10419,65 @@ MonoBehaviour:
       - m_Target: {fileID: 1248034471}
         m_TargetAssemblyTypeName: CharacterMovement, Assembly-CSharp
         m_MethodName: DisableCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1905856644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905856637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e9b59be2f784fbf88f3cd48af24dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startAnimation:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1248034471}
+        m_TargetAssemblyTypeName: CharacterMovement, Assembly-CSharp
+        m_MethodName: DisableCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  endAnimation:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1248034471}
+        m_TargetAssemblyTypeName: CharacterMovement, Assembly-CSharp
+        m_MethodName: EnableCharacter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  timeLine: {fileID: 2072369764}
+  timeLine2: {fileID: 627738479}
+  triggerDialogue:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 35447725}
+        m_TargetAssemblyTypeName: dialogueManager, Assembly-CSharp
+        m_MethodName: RunDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
