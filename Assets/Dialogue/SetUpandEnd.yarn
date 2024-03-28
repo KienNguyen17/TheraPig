@@ -7,12 +7,14 @@ Pig: *oink oink*
 title: StartKyle
 group: firstDay
 ---
+<<PlayAnimation kyleCharacter>>
 Kyle: Mom? You there?
 <<advance DialogueManager StartNancy>>
 ===
 title: StartNancy
 group: firstDay
 ---
+<<PlayAnimation nancyCharacter>>
 Nancy: I'll respond to your email first thing tomorr-
 Nancy: Kyle? 
 Nancy: I'll call you right back, Jeremy. 
@@ -87,5 +89,11 @@ Kyle: Mom, were you gonna pay these bills?
 Nancy: Oh give me that. I was gonna get to it.
 Kyle: They'll cut off our heating again if you keep forgetting to pay the bill. 
 Nancy: Well if you have nothing better to do, you can help me with them.
+===
+
+title: calendar
+group: interactive
+---
+Pig: It's Kyle's birthday in a couple of days.
 ===
 
