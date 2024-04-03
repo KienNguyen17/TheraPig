@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    private float defaultSpeed = 5.0f;
+    private float defaultSpeed = 20.0f;
     private float speed;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;

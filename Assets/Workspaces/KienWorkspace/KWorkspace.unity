@@ -941,6 +941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGoodEnd: 0
+  count: 0
+  GameInventory: {fileID: 0}
 --- !u!61 &1280288007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1359,8 +1361,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3989251139521354891, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
+      propertyPath: m_Mass
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989251139521354891, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_BodyType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989251139521354891, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
+      propertyPath: m_LinearDrag
+      value: 190
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989251139521354891, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
+      propertyPath: m_AngularDrag
+      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 9038712474259430585, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_Name
