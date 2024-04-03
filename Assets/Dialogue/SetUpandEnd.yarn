@@ -30,12 +30,7 @@ Kyle: I'm not hungry.
 <<DeactivateCharacter kyleCharacter>>
 <<ActivateCharacter kyleCharacterExit1>>
 <<PlayAnimation kyleCharacterExit1>>
-<<advance DialogueManager secondSetUp>>
-===
-
-title: secondSetUp
-group: secondDay
----
+**:The Next Morning
 Nancy: I'm off to work. Don't stay in bed all day.
 Kyle: I know, I know.
 
