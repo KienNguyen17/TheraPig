@@ -1611,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3989251139521354891, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_Mass
-      value: 3.3000002
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3989251139521354891, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_BodyType
@@ -1619,15 +1619,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3989251139521354891, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_LinearDrag
-      value: 2
+      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 3989251139521354891, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_AngularDrag
-      value: 0.5
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3989251139521354891, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_UseAutoMass
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7687179102297801874, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_SortingOrder
