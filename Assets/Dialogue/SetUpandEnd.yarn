@@ -30,9 +30,15 @@ Kyle: I'm not hungry.
 <<DeactivateCharacter kyleCharacter>>
 <<ActivateCharacter kyleCharacterExit1>>
 <<PlayAnimation kyleCharacterExit1>>
-**:The Next Morning
+**: THE NEXT DAY
+<<DeactivateCharacter kyleCharacterExit1>>
+<<DeactivateCharacter nancyCharacterExit1>>
+<<ActivateCharacter nancyCharacterOpen2>>
+<<PlayAnimation nancyCharacterOpen2>>
 Nancy: I'm off to work. Don't stay in bed all day.
+<<ActivateCharacter kyleCharacterOpen2>>
 Kyle: I know, I know.
+<<PlayAnimation kyleCharacterOpen2>>
 
 /// this variable determines the ending of the second day
 <<advance DialogueManager secondEnd>>
