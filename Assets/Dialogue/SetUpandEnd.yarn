@@ -9,8 +9,10 @@ Pig: *oink oink*
 title: StartKyle
 group: firstDay
 ---
+<<ActivateCharacter kyleCharacter>>
 <<PlayAnimation kyleCharacter>>
 Kyle: Mom? You there?
+<<ActivateCharacter nancyCharacter>>
 <<PlayAnimation nancyCharacter>>
 Nancy: I'll respond to your email first thing tomorr-
 Nancy: Kyle? 
@@ -21,7 +23,13 @@ Nancy: Why didn't you call me?
 Kyle: I told you when I was landing. I waited 30 minutes. Your phone went right to voicemail.
 Nancy: I just got off work. 
 Nancy: Go wash up, I'll make dinner.
+<<DeactivateCharacter nancyCharacter>>
+<<ActivateCharacter nancyCharacterExit1>>
+<<PlayAnimation nancyCharacterExit1>>
 Kyle: I'm not hungry.
+<<DeactivateCharacter kyleCharacter>>
+<<ActivateCharacter kyleCharacterExit1>>
+<<PlayAnimation kyleCharacterExit1>>
 <<advance DialogueManager secondSetUp>>
 ===
 
