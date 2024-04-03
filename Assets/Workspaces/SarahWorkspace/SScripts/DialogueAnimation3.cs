@@ -10,11 +10,13 @@ public class DialogueAnimation3 : MonoBehaviour
     public UnityEvent startAnimation, endAnimation;
     public GameObject timeLine;
     PlayableDirector director1;
+    SpriteRenderer renderer;
 
     void Start()
     {
         director1 = timeLine.GetComponent<PlayableDirector>();
         director1.stopped += OnPlayableDirector;
+        renderer = gameObject.GetComponent<SpriteRenderer>();
         // director2 = timeLine2.GetComponent<PlayableDirector>();
         // director2.stopped += OnPlayableDirector;
     }
@@ -39,5 +41,15 @@ public class DialogueAnimation3 : MonoBehaviour
         startAnimation.Invoke();
         director1.Play();
         // director2.Play();
+    }
+
+    [YarnCommand("ActivateCharacter")]
+    public void ActivateCharacter() {
+        renderer.enabled = true;
+    }
+
+    [YarnCommand("DeactivateCharacter")]
+    public void DeactivateCharacter() {
+        renderer.enabled = false;
     }
 }

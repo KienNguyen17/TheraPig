@@ -9,8 +9,10 @@ Pig: *oink oink*
 title: StartKyle
 group: firstDay
 ---
+<<ActivateCharacter kyleCharacter>>
 <<PlayAnimation kyleCharacter>>
 Kyle: Mom? You there?
+<<ActivateCharacter nancyCharacter>>
 <<PlayAnimation nancyCharacter>>
 Nancy: I'll respond to your email first thing tomorr-
 Nancy: Kyle? 
@@ -21,15 +23,22 @@ Nancy: Why didn't you call me?
 Kyle: I told you when I was landing. I waited 30 minutes. Your phone went right to voicemail.
 Nancy: I just got off work. 
 Nancy: Go wash up, I'll make dinner.
+<<DeactivateCharacter nancyCharacter>>
+<<ActivateCharacter nancyCharacterExit1>>
+<<PlayAnimation nancyCharacterExit1>>
 Kyle: I'm not hungry.
-<<advance DialogueManager secondSetUp>>
-===
-
-title: secondSetUp
-group: secondDay
----
+<<DeactivateCharacter kyleCharacter>>
+<<ActivateCharacter kyleCharacterExit1>>
+<<PlayAnimation kyleCharacterExit1>>
+**: THE NEXT DAY
+<<DeactivateCharacter kyleCharacterExit1>>
+<<DeactivateCharacter nancyCharacterExit1>>
+<<ActivateCharacter nancyCharacterOpen2>>
+<<PlayAnimation nancyCharacterOpen2>>
 Nancy: I'm off to work. Don't stay in bed all day.
+<<ActivateCharacter kyleCharacterOpen2>>
 Kyle: I know, I know.
+<<PlayAnimation kyleCharacterOpen2>>
 
 /// this variable determines the ending of the second day
 <<advance DialogueManager secondEnd>>
