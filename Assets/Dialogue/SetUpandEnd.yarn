@@ -56,10 +56,19 @@ group: secondDay
     Nancy: Alright. Well, get ready for dinner. I'm making your favorite stew. 
 <<else>>
     <<set $thirdStart to false>>
+    <<DeactivateCharacter nancyCharacterOpen2>>
+    <<DeactivateCharacter kyleCharacterOpen2>>
+    <<DeactivateCharacter nancyCharacterExit1>>
+    <<ActivateCharacter nancyCharacterOpen3>>
+    <<ActivateCharacter kyleCharacterOpen3>>
+    <<PlayAnimation nancyCharacterOpen3>>
     Nancy: Kyle, help me make dinner.
     Nancy: Aish, you're still in bed? It's dinner time.
     Kyle: Alright, I'll be up in a minute.
     Nancy: Don't be like this all winter.
+    <<DeactivateCharacter nancyCharacterOpen3>>
+    <<ActivateCharacter nancyCharacterOpen4>>
+    <<PlayAnimation nancyCharacterOpen4>>
 <<endif>>
 <<advance DialogueManager thirdSetUp>>
 ===
