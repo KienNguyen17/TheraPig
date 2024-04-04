@@ -11,6 +11,9 @@ public class CharacterMovement : MonoBehaviour
     private Vector2 movementDirection;
     private float horizontalInput;
     // Start is called before the first frame update
+    private float verticalInput;
+    public Animator animator;
+
     void Start()
     {
         speed = defaultSpeed;
@@ -23,6 +26,10 @@ public class CharacterMovement : MonoBehaviour
     {
         movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         horizontalInput = Input.GetAxisRaw("Horizontal");
+        verticalInput = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
+        animator.SetFloat("HorizontalDir", (verticalInput));
 
         if (horizontalInput > 0) {
             spriteRenderer.flipX = true;
