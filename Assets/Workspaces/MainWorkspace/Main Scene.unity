@@ -12528,7 +12528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5932166888894586011, guid: d09fff0a25f9b4b87bc06b3a4d6b0185, type: 3}
       propertyPath: m_Name
-      value: kyleCharacter
+      value: kyleCharacterOpen1
       objectReference: {fileID: 0}
     - target: {fileID: 7471952974173256911, guid: d09fff0a25f9b4b87bc06b3a4d6b0185, type: 3}
       propertyPath: timeLine
@@ -12978,7 +12978,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3218164572577301950, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_Name
-      value: nancyCharacter
+      value: nancyCharacterOpen1
       objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
