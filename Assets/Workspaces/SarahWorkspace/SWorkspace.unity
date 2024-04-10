@@ -9944,6 +9944,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cd610de7f1284617b0dd4e4bac3686f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1248034472 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2393951989441272273, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
+  m_PrefabInstance: {fileID: 2041723979635634304}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1284333233
 GameObject:
   m_ObjectHideFlags: 0
@@ -11707,6 +11712,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3445895335232801977, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1248034472}
     - target: {fileID: 9038712474259430585, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_Name
       value: pig
@@ -11770,7 +11779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5932166888894586011, guid: d09fff0a25f9b4b87bc06b3a4d6b0185, type: 3}
       propertyPath: m_Name
-      value: kyleCharacter
+      value: kyleCharacterOpen1
       objectReference: {fileID: 0}
     - target: {fileID: 5932166888894586011, guid: d09fff0a25f9b4b87bc06b3a4d6b0185, type: 3}
       propertyPath: m_IsActive
@@ -11803,7 +11812,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3218164572577301950, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_Name
-      value: nancyCharacter
+      value: nancyCharacterOpen1
       objectReference: {fileID: 0}
     - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_Enabled
