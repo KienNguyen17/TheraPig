@@ -92,6 +92,7 @@ group: thirdDay
     <<ActivateCharacter kyleCharacterOpen4>>
     <<PlayAnimation kyleCharacterOpen4>>
     Kyle: I'm heading out, Mom.
+    <<PlayAnimation nancyCharacterOpen4>>
     Nancy: Where are you going?
     Kyle: It's something I'm working on. I'll tell you about it when I get it.
     Nancy: Guess we're both busy now, you'll have to guard the house, piggy.
@@ -100,6 +101,7 @@ group: thirdDay
     <<PlayAnimation kyleCharacterExit2>>
     Pig: *oink oink*
     Nancy: Maybe it'll give me more time to prepare for his birthday. But now, I have work to do too.
+    <<advance DialogueManager thirdGoodEnd>>
 <<else>>
     <<DeactivateCharacter nancyCharacterExit4>>
     <<DeactivateCharacter kyleCharacterOpen3>>
@@ -113,6 +115,7 @@ group: thirdDay
     <<DeactivateCharacter nancyCharacterOpen4.5>>
     <<ActivateCharacter nancyCharacterExit4.5>>
     <<PlayAnimation nancyCharacterExit4.5>>
+    <<advance DialogueManager thirdBadEnd>>
 <<endif>>
 ===
 
@@ -150,9 +153,15 @@ group: interactive
 Pig: It's Kyle's birthday in a couple of days.
 ===
 
-title:newspaper
-group:interactive
+title: newspaperStack
+group: newspaper
 ---
-Pig: There's a job listing in the newspaper!
+Pig: They have so much mail and newspapers!
+===
+
+title: newspaper
+group: newspaper
+---
+Pig: There's a job listing in this newspaper!
 ===
 

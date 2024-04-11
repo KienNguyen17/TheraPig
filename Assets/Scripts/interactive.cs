@@ -12,6 +12,8 @@ public class interactive : MonoBehaviour
     public bool isInteractible;
     bool pickedUpItem;
     public UnityEvent triggerInstruction;
+    public UnityEvent minigame;
+    public bool first=true;
     public UnityEvent triggerDropInstructionOn;
     public UnityEvent triggerDropInstructionOff;
     public UnityEvent intoInventory;
@@ -50,7 +52,12 @@ public class interactive : MonoBehaviour
     void PickedUp() {
         if (isInteractible) {
             isInteractible = false;
-            intoInventory.Invoke();
+            if (first) {
+                minigame.Invoke();
+                first = false;
+            } else {
+                intoInventory.Invoke();
+            }
             renderer.enabled = false;
             // disable the item's collision body 
             GetComponent<BoxCollider2D>().enabled = false;
