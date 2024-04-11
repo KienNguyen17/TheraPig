@@ -9,11 +9,11 @@ Pig: *oink oink*
 title: StartKyle
 group: firstDay
 ---
-<<ActivateCharacter kyleCharacter>>
-<<PlayAnimation kyleCharacter>>
+<<ActivateCharacter kyleCharacterOpen1>>
+<<PlayAnimation kyleCharacterOpen1>>
 Kyle: Mom? You there?
-<<ActivateCharacter nancyCharacter>>
-<<PlayAnimation nancyCharacter>>
+<<ActivateCharacter nancyCharacterOpen1>>
+<<PlayAnimation nancyCharacterOpen1>>
 Nancy: I'll respond to your email first thing tomorr-
 Nancy: Kyle? 
 Nancy: I'll call you right back, Jeremy. 
@@ -23,16 +23,22 @@ Nancy: Why didn't you call me?
 Kyle: I told you when I was landing. I waited 30 minutes. Your phone went right to voicemail.
 Nancy: I just got off work. 
 Nancy: Go wash up, I'll make dinner.
-<<DeactivateCharacter nancyCharacter>>
+<<DeactivateCharacter nancyCharacterOpen1>>
 <<ActivateCharacter nancyCharacterExit1>>
 <<PlayAnimation nancyCharacterExit1>>
 Kyle: I'm not hungry.
-<<DeactivateCharacter kyleCharacter>>
+<<DeactivateCharacter kyleCharacterOpen1>>
 <<ActivateCharacter kyleCharacterExit1>>
 <<PlayAnimation kyleCharacterExit1>>
-**:The Next Morning
+**: THE NEXT DAY
+<<DeactivateCharacter kyleCharacterExit1>>
+<<DeactivateCharacter nancyCharacterExit1>>
+<<ActivateCharacter nancyCharacterOpen2>>
+<<PlayAnimation nancyCharacterOpen2>>
 Nancy: I'm off to work. Don't stay in bed all day.
+<<ActivateCharacter kyleCharacterOpen2>>
 Kyle: I know, I know.
+<<PlayAnimation kyleCharacterOpen2>>
 
 /// this variable determines the ending of the second day
 <<advance DialogueManager secondEnd>>
@@ -43,17 +49,33 @@ group: secondDay
 ---
 <<if $secondEnd>>
     <<set $thirdStart to true>>
+    <<DeactivateCharacter nancyCharacterOpen2>>
+    <<DeactivateCharacter kyleCharacterOpen2>>
+    <<ActivateCharacter nancyCharacterOpen3.5>>
+    <<ActivateCharacter kyleCharacterOpen3.5>>
+    <<PlayAnimation nancyCharacterOpen3.5>>
     Nancy: Kyle, help me make dinner.
     Kyle: I'm busy, Mom. 
     Nancy: What are you doing? 
     Kyle: I just… I have some work to do.
     Nancy: Alright. Well, get ready for dinner. I'm making your favorite stew. 
+    <<DeactivateCharacter nancyCharacterOpen3.5>>
+    <<ActivateCharacter nancyCharacterExit3.5>>
+    <<PlayAnimation nancyCharacterExit3.5>>
 <<else>>
     <<set $thirdStart to false>>
+    <<DeactivateCharacter nancyCharacterOpen2>>
+    <<DeactivateCharacter kyleCharacterOpen2>>
+    <<ActivateCharacter nancyCharacterOpen3>>
+    <<ActivateCharacter kyleCharacterOpen3>>
+    <<PlayAnimation nancyCharacterOpen3>>
     Nancy: Kyle, help me make dinner.
     Nancy: Aish, you're still in bed? It's dinner time.
     Kyle: Alright, I'll be up in a minute.
     Nancy: Don't be like this all winter.
+    <<DeactivateCharacter nancyCharacterOpen3>>
+    <<ActivateCharacter nancyCharacterExit4>>
+    <<PlayAnimation nancyCharacterExit4>>
 <<endif>>
 <<advance DialogueManager thirdSetUp>>
 ===
@@ -62,32 +84,67 @@ title: thirdSetUp
 group: thirdDay
 ---
 <<if $thirdStart>>
+    <<DeactivateCharacter nancyCharacterExit4>>
+    <<DeactivateCharacter kyleCharacterOpen3>>
+    <<DeactivateCharacter nancyCharacterExit3.5>>
+    <<DeactivateCharacter kyleCharacterOpen3.5>>
+    <<ActivateCharacter nancyCharacterOpen4>>
+    <<ActivateCharacter kyleCharacterOpen4>>
+    <<PlayAnimation kyleCharacterOpen4>>
     Kyle: I'm heading out, Mom.
+    <<PlayAnimation nancyCharacterOpen4>>
     Nancy: Where are you going?
     Kyle: It's something I'm working on. I'll tell you about it when I get it.
     Nancy: Guess we're both busy now, you'll have to guard the house, piggy.
+    <<DeactivateCharacter kyleCharacterOpen4>>
+    <<ActivateCharacter kyleCharacterExit2>>
+    <<PlayAnimation kyleCharacterExit2>>
     Pig: *oink oink*
     Nancy: Maybe it'll give me more time to prepare for his birthday. But now, I have work to do too.
+    <<advance DialogueManager thirdGoodEnd>>
 <<else>>
+    <<DeactivateCharacter nancyCharacterExit4>>
+    <<DeactivateCharacter kyleCharacterOpen3>>
+    <<DeactivateCharacter nancyCharacterExit3.5>>
+    <<DeactivateCharacter kyleCharacterOpen3.5>>
+    <<ActivateCharacter nancyCharacterOpen4.5>>
+    <<PlayAnimation nancyCharacterOpen4.5>>
     Nancy (to pig): He's almost 21 now and still lying in bed all day. You better watch over him for me.
     Pig: *oink oink*
     Nancy: Alright, I've got work to attend to.
+    <<DeactivateCharacter nancyCharacterOpen4.5>>
+    <<ActivateCharacter nancyCharacterExit4.5>>
+    <<PlayAnimation nancyCharacterExit4.5>>
+    <<advance DialogueManager thirdBadEnd>>
 <<endif>>
 ===
 
 title: thirdGoodEnd
 group: thirdDay
 ---
+<<DeactivateCharacter nancyCharacterExit4.5>>
+<<DeactivateCharacter nancyCharacterOpen4>>
+<<ActivateCharacter nancyGoodEndingOpen>>
+<<PlayAnimation nancyGoodEndingOpen1>>
 Nancy: Thank you, little piggy. I'll send these in tomorrow.
+**: GOOD ENDING
 ===
 
 title: thirdBadEnd
 group: thirdDay
 ---
+<<DeactivateCharacter kyleCharacterExit2>>
+<<DeactivateCharacter nancyCharacterOpen4>>
+<<DeactivateCharacter nancyCharacterExit4.5>>
+<<ActivateCharacter kyleCharacterBadEnding1>>
+<<ActivateCharacter nancyCharacterBadEnding1>>
+<<PlayAnimation kyleCharacterBadEnding1>>
 Kyle: Mom, were you gonna pay these bills? 
+<<PlayAnimation nancyCharacterBadEnding1>>
 Nancy: Oh give me that. I was gonna get to it.
 Kyle: They'll cut off our heating again if you keep forgetting to pay the bill. 
 Nancy: Well if you have nothing better to do, you can help me with them.
+**: BAD ENDING
 ===
 
 title: calendar
