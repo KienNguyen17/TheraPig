@@ -96,9 +96,15 @@ group: interactive
 Pig: It's Kyle's birthday in a couple of days.
 ===
 
-title:newspaper
-group:interactive
+title: newspaperStack
+group: newspaper
 ---
-Pig: There's a job listing in the newspaper!
+Pig: They have so much mail and newspapers!
+===
+
+title: newspaper
+group: newspaper
+---
+Pig: There's a job listing in this newspaper!
 ===
 
