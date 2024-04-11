@@ -13,6 +13,7 @@ public class dialogueManager : MonoBehaviour
         currentNode = "Start";
         runner = FindObjectOfType<DialogueRunner>();
         Invoke("RunDialogue", 0.5f);
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
