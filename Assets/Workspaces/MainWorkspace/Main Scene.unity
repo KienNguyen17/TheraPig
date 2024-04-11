@@ -1662,11 +1662,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 461990155582001558, guid: ef18b2519b3d04fa8a505bb419e14f46, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 300
+      value: 218
       objectReference: {fileID: 0}
     - target: {fileID: 461990155582001558, guid: ef18b2519b3d04fa8a505bb419e14f46, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1041
+      value: 885
       objectReference: {fileID: 0}
     - target: {fileID: 461990155582001558, guid: ef18b2519b3d04fa8a505bb419e14f46, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13572,7 +13572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2738883862453968363, guid: b560d15e88147489184ed9c2f6091feb, type: 3}
       propertyPath: triggerDialogue.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2738883862453968363, guid: b560d15e88147489184ed9c2f6091feb, type: 3}
       propertyPath: triggerDialogue.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -16292,6 +16292,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  minigame:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 235439332}
+        m_TargetAssemblyTypeName: dialogueManager, Assembly-CSharp
+        m_MethodName: RunNode
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: newspaper
+          m_BoolArgument: 0
+        m_CallState: 2
+  first: 1
   triggerDropInstructionOn:
     m_PersistentCalls:
       m_Calls:
