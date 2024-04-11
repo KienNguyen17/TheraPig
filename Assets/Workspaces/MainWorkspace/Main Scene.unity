@@ -908,9 +908,9 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 51.594337
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2261,7 +2261,7 @@ GameObject:
   - component: {fileID: 450355657}
   - component: {fileID: 450355656}
   - component: {fileID: 450355655}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: SceneCamera (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2331,9 +2331,9 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2357,7 +2357,7 @@ Transform:
   m_GameObject: {fileID: 450355654}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: -7}
+  m_LocalPosition: {x: 2, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2877,9 +2877,9 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 55.11195
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -16515,7 +16515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
@@ -16539,7 +16539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282627501355161654, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 9.827661
       objectReference: {fileID: 0}
     - target: {fileID: 8282627501355161654, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16602,7 +16602,7 @@ Transform:
   m_GameObject: {fileID: 2122917956}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7022004, y: 4.265671, z: -9.827661}
+  m_LocalPosition: {x: -2.7022004, y: 4.265671, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
