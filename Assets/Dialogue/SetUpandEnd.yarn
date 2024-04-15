@@ -39,6 +39,9 @@ Nancy: I'm off to work. Don't stay in bed all day.
 <<ActivateCharacter kyleCharacterOpen2>>
 Kyle: I know, I know.
 <<PlayAnimation kyleCharacterOpen2>>
+<<DeactivateCharacter nancyCharacterOpen2>>
+<<ActivateCharacter nancyCharacterDay2Exit1>>
+<<PlayAnimation nancyCharacterDay2Exit1>>
 
 /// this variable determines the ending of the second day
 <<advance DialogueManager secondEnd>>
@@ -49,13 +52,13 @@ group: secondDay
 ---
 <<if $secondEnd>>
     <<set $thirdStart to true>>
-    <<DeactivateCharacter nancyCharacterOpen2>>
+    <<DeactivateCharacter nancyCharacterDay2Exit1>>
     <<DeactivateCharacter kyleCharacterOpen2>>
     <<ActivateCharacter nancyCharacterOpen3.5>>
     <<ActivateCharacter kyleCharacterOpen3.5>>
     <<PlayAnimation nancyCharacterOpen3.5>>
-    Nancy: Kyle, help me make dinner.
-    Kyle: I'm busy, Mom. 
+    Nancy: *yelling* Kyle, help me make dinner!
+    Kyle: I'm busy, Mom!
     Nancy: What are you doing? 
     Kyle: I just… I have some work to do.
     Nancy: Alright. Well, get ready for dinner. I'm making your favorite stew. 
@@ -64,15 +67,15 @@ group: secondDay
     <<PlayAnimation nancyCharacterExit3.5>>
 <<else>>
     <<set $thirdStart to false>>
-    <<DeactivateCharacter nancyCharacterOpen2>>
+    <<DeactivateCharacter nancyCharacterDay2Exit1>>
     <<DeactivateCharacter kyleCharacterOpen2>>
     <<ActivateCharacter nancyCharacterOpen3>>
     <<ActivateCharacter kyleCharacterOpen3>>
     <<PlayAnimation nancyCharacterOpen3>>
-    Nancy: Kyle, help me make dinner.
-    Nancy: Aish, you're still in bed? It's dinner time.
-    Kyle: Alright, I'll be up in a minute.
-    Nancy: Don't be like this all winter.
+    Nancy: *yelling* Kyle, help me make dinner!
+    Nancy: Aish, are you still in bed? It's dinner time!
+    Kyle: Alright, I'll be up in a minute!
+    Nancy: Don't be like this all winter!
     <<DeactivateCharacter nancyCharacterOpen3>>
     <<ActivateCharacter nancyCharacterExit4>>
     <<PlayAnimation nancyCharacterExit4>>
@@ -124,7 +127,8 @@ group: thirdDay
 ---
 <<DeactivateCharacter nancyCharacterExit4.5>>
 <<DeactivateCharacter nancyCharacterOpen4>>
-<<ActivateCharacter nancyGoodEndingOpen>>
+<<DeactivateCharacter kyleCharacterExit2>>
+<<ActivateCharacter nancyGoodEndingOpen1>>
 <<PlayAnimation nancyGoodEndingOpen1>>
 Nancy: Thank you, little piggy. I'll send these in tomorrow.
 **: GOOD ENDING
