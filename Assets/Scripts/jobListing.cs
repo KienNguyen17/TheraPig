@@ -10,6 +10,7 @@ public class jobListing : MonoBehaviour
 {
     DialogueRunner runner;
     public UnityEvent triggerInstruction;
+    public UnityEvent intoInventory;
     bool isPicked;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class jobListing : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Q) && isPicked) {
-            this.gameObject.SetActive(false);
+            intoInventory.Invoke();
         }
     }
 

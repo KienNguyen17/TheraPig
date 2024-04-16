@@ -11,9 +11,9 @@ public class interactive : MonoBehaviour
     SpriteRenderer renderer;
     public bool isInteractible;
     bool pickedUpItem;
-    public UnityEvent triggerInstruction;
-    public UnityEvent minigame;
     public bool first=true;
+    public UnityEvent minigame;
+    public UnityEvent triggerInstruction;
     public UnityEvent triggerDropInstructionOn;
     public UnityEvent triggerDropInstructionOff;
     public UnityEvent intoInventory;
@@ -54,15 +54,16 @@ public class interactive : MonoBehaviour
             isInteractible = false;
             if (first) {
                 minigame.Invoke();
+                isInteractible = false;
                 first = false;
             } else {
                 intoInventory.Invoke();
+                triggerDropInstructionOn.Invoke();
+                pickedUpItem = true;
             }
             renderer.enabled = false;
             // disable the item's collision body 
             GetComponent<BoxCollider2D>().enabled = false;
-            pickedUpItem = true;
-            triggerDropInstructionOn.Invoke();
         }
     }
 
@@ -77,5 +78,11 @@ public class interactive : MonoBehaviour
             GetComponent<BoxCollider2D>().enabled = true;
             triggerDropInstructionOff.Invoke();
         }
+    }
+
+    public void Reactivate() {
+        // For minigame logic to work
+        isInteractible = true;
+        pickedUpItem = true;
     }
 }

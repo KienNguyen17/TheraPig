@@ -8,14 +8,13 @@ public class paperController : MonoBehaviour
     // BoxCollider boxCollider;
     private Vector3 currentMousePos;
     private Vector3 currentPos;
-    private Camera mainCamera;
+    public Camera currentCamera;
     private Vector3 objPos;
     private bool isInteracted;
     // Start is called before the first frame update
     void Start()
     {
-        mainCamera = Camera.main;
-        isInteracted = false;
+        isInteracted = true;
     }
 
     // Update is called once per frame
@@ -28,7 +27,7 @@ public class paperController : MonoBehaviour
     {
         if (isInteracted) 
         {
-            currentMousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            currentMousePos = currentCamera.ScreenToWorldPoint(Input.mousePosition);
             currentPos = transform.position;
         }
     }
@@ -37,7 +36,7 @@ public class paperController : MonoBehaviour
     {
         if (isInteracted) 
         {
-            Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 mousePos = currentCamera.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(currentPos.x+mousePos.x-currentMousePos.x, currentPos.y+mousePos.y-currentMousePos.y, currentPos.z);
         }
     }
