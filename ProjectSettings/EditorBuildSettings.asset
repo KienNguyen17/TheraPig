@@ -11,10 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Workspaces/MainWorkspace/Main Scene.unity
     guid: 61f1dabe8e4e843bb8c2083a8a0392bc
-  - enabled: 1
-    path: Assets/Workspaces/KienWorkspace/KWorkspace.unity
-    guid: 52b8dd9d9b13049c29f81182573a43db
-  - enabled: 1
-    path: Assets/Workspaces/KienWorkspace/TestScene.unity
-    guid: 2e40799d5a38640f9bb51ae495133ab7
   m_configObjects: {}
