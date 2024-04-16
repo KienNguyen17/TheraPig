@@ -10,8 +10,8 @@ public class interactive : MonoBehaviour
 {
     SpriteRenderer renderer;
     public bool isInteractible;
-    bool pickedUpItem;
-    public bool first=true;
+    public bool pickedUpItem;
+    public bool first;
     public UnityEvent minigame;
     public UnityEvent triggerInstruction;
     public UnityEvent triggerDropInstructionOn;
@@ -24,6 +24,7 @@ public class interactive : MonoBehaviour
     void Start()
     {
         renderer = GetComponent<SpriteRenderer>();
+        first = true;
     }
 
     // Update is called once per frame
@@ -54,7 +55,6 @@ public class interactive : MonoBehaviour
             isInteractible = false;
             if (first) {
                 minigame.Invoke();
-                isInteractible = false;
                 first = false;
             } else {
                 intoInventory.Invoke();
@@ -82,7 +82,6 @@ public class interactive : MonoBehaviour
 
     public void Reactivate() {
         // For minigame logic to work
-        isInteractible = true;
         pickedUpItem = true;
     }
 }

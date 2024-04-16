@@ -778,11 +778,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7374732104504031498, guid: 5120cf594db40442d9684bd972fc97d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -47474.383
+      value: -47346
       objectReference: {fileID: 0}
     - target: {fileID: 7374732104504031498, guid: 5120cf594db40442d9684bd972fc97d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 57473.13
+      value: 57414
       objectReference: {fileID: 0}
     - target: {fileID: 7374732104504031498, guid: 5120cf594db40442d9684bd972fc97d5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1564,11 +1564,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6289380962439597795, guid: c078129e56c6e484a83d361d40d12b71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -47311.707
+      value: -47672
       objectReference: {fileID: 0}
     - target: {fileID: 6289380962439597795, guid: c078129e56c6e484a83d361d40d12b71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 57534.977
+      value: 57523
       objectReference: {fileID: 0}
     - target: {fileID: 6289380962439597795, guid: c078129e56c6e484a83d361d40d12b71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2504,38 +2504,6 @@ Transform:
   - {fileID: 1217337329}
   m_Father: {fileID: 2122917957}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &395141644 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3076981754187282640, guid: 1bf349c0381234548b808e58a8f8a76d, type: 3}
-  m_PrefabInstance: {fileID: 1024674247}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &395141649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395141644}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3b2ff1ec731448698729d6bf503f3f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerDialogue:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 235439332}
-        m_TargetAssemblyTypeName: dialogueManager, Assembly-CSharp
-        m_MethodName: RunDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &442313815
 GameObject:
   m_ObjectHideFlags: 0
@@ -3542,11 +3510,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 121090256184435566, guid: bdeaaac41d9a04bbcb592ac16f9f1f20, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -47650.59
+      value: -47559
       objectReference: {fileID: 0}
     - target: {fileID: 121090256184435566, guid: bdeaaac41d9a04bbcb592ac16f9f1f20, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 57358.45
+      value: 57387
       objectReference: {fileID: 0}
     - target: {fileID: 121090256184435566, guid: bdeaaac41d9a04bbcb592ac16f9f1f20, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5617,10 +5585,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3076981754187282640, guid: 1bf349c0381234548b808e58a8f8a76d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 395141649}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bf349c0381234548b808e58a8f8a76d, type: 3}
 --- !u!1 &1028867592
 GameObject:
@@ -14603,7 +14568,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 52557288551588836, guid: 7a735f41b4cce4dcc979dabec1ce7eb9, type: 3}
       propertyPath: intoInventory.m_PersistentCalls.m_Calls.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 52557288551588836, guid: 7a735f41b4cce4dcc979dabec1ce7eb9, type: 3}
       propertyPath: triggerInstruction.m_PersistentCalls.m_Calls.Array.size
@@ -15893,11 +15858,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4522558448889449565, guid: c606c971057ce441ca032b5e823e6b61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -47476.96
+      value: -47480
       objectReference: {fileID: 0}
     - target: {fileID: 4522558448889449565, guid: c606c971057ce441ca032b5e823e6b61, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 57663.832
+      value: 57546
       objectReference: {fileID: 0}
     - target: {fileID: 4522558448889449565, guid: c606c971057ce441ca032b5e823e6b61, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17662,23 +17627,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3227774567542795398, guid: b5137361c77194a0596f6aa6637730ea, type: 3}
       propertyPath: m_LocalScale.x
-      value: 109.06028
+      value: 141.8329
       objectReference: {fileID: 0}
     - target: {fileID: 3227774567542795398, guid: b5137361c77194a0596f6aa6637730ea, type: 3}
       propertyPath: m_LocalScale.y
-      value: 109.06028
+      value: 141.8329
       objectReference: {fileID: 0}
     - target: {fileID: 3227774567542795398, guid: b5137361c77194a0596f6aa6637730ea, type: 3}
       propertyPath: m_LocalScale.z
-      value: 109.06028
+      value: 141.8329
       objectReference: {fileID: 0}
     - target: {fileID: 3227774567542795398, guid: b5137361c77194a0596f6aa6637730ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -47659.29
+      value: -47303
       objectReference: {fileID: 0}
     - target: {fileID: 3227774567542795398, guid: b5137361c77194a0596f6aa6637730ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 57576.535
+      value: 57589
       objectReference: {fileID: 0}
     - target: {fileID: 3227774567542795398, guid: b5137361c77194a0596f6aa6637730ea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18169,7 +18134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

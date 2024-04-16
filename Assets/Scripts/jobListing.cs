@@ -24,6 +24,7 @@ public class jobListing : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Q) && isPicked) {
             intoInventory.Invoke();
+            isPicked = false;
         }
     }
 
