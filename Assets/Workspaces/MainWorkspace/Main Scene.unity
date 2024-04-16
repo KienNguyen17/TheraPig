@@ -2546,6 +2546,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trashcan_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8270440157723580951, guid: 0441a8110e05647369b4618decc06701, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5522022
+      objectReference: {fileID: 0}
+    - target: {fileID: 8270440157723580951, guid: 0441a8110e05647369b4618decc06701, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6566048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8270440157723580951, guid: 0441a8110e05647369b4618decc06701, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0921936
+      objectReference: {fileID: 0}
+    - target: {fileID: 8270440157723580951, guid: 0441a8110e05647369b4618decc06701, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.17121696
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4591,6 +4607,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxedLetters_0
       objectReference: {fileID: 0}
+    - target: {fileID: 955617872855111893, guid: c04008a57d34047abadf0bdb3798fcd9, type: 3}
+      propertyPath: m_Size.y
+      value: 2.420496
+      objectReference: {fileID: 0}
+    - target: {fileID: 955617872855111893, guid: c04008a57d34047abadf0bdb3798fcd9, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.23706913
+      objectReference: {fileID: 0}
     - target: {fileID: 3768799919758659204, guid: c04008a57d34047abadf0bdb3798fcd9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.91
@@ -6294,6 +6318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1267070072}
   - component: {fileID: 1267070073}
+  - component: {fileID: 1267070074}
   m_Layer: 0
   m_Name: Kyle Bed
   m_TagString: Untagged
@@ -6368,6 +6393,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1267070074
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267070071}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.19755793}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.25, y: 4.375}
+    newSize: {x: 2.25, y: 4.375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.25, y: 3.9798841}
+  m_EdgeRadius: 0
 --- !u!1 &1269717430
 GameObject:
   m_ObjectHideFlags: 0
@@ -13763,6 +13833,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5262362798723679237, guid: eb436d740000845cc856d2683e19d192, type: 3}
+      propertyPath: m_Size.x
+      value: 1.9209762
+      objectReference: {fileID: 0}
+    - target: {fileID: 5262362798723679237, guid: eb436d740000845cc856d2683e19d192, type: 3}
+      propertyPath: m_Size.y
+      value: 1.7356262
+      objectReference: {fileID: 0}
+    - target: {fileID: 5262362798723679237, guid: eb436d740000845cc856d2683e19d192, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.092193365
+      objectReference: {fileID: 0}
+    - target: {fileID: 5262362798723679237, guid: eb436d740000845cc856d2683e19d192, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.21072769
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16447,6 +16533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1952496093}
   - component: {fileID: 1952496094}
+  - component: {fileID: 1952496095}
   m_Layer: 0
   m_Name: Nancy Be
   m_TagString: Untagged
@@ -16521,6 +16608,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1952496095
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952496092}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.30292225}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.25, y: 3.5}
+    newSize: {x: 4.25, y: 3.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.25, y: 2.8941555}
+  m_EdgeRadius: 0
 --- !u!4 &1960898398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8282627501355161654, guid: 8f698f936e5244c8db38c11014393885, type: 3}
@@ -17567,6 +17699,14 @@ PrefabInstance:
     - target: {fileID: 876220331988288555, guid: a80e96360594147678eb483c3625443d, type: 3}
       propertyPath: m_Name
       value: StackedBills_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090203741378973154, guid: a80e96360594147678eb483c3625443d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.7150893
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090203741378973154, guid: a80e96360594147678eb483c3625443d, type: 3}
+      propertyPath: m_Center.y
+      value: -0.15507579
       objectReference: {fileID: 0}
     - target: {fileID: 6611762565483104593, guid: a80e96360594147678eb483c3625443d, type: 3}
       propertyPath: m_LocalPosition.x
