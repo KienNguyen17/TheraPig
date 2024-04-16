@@ -1834,7 +1834,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 300
   m_Sprite: {fileID: 21300000, guid: b178ab82fc6ad45fa90feeccff28b099, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2584,6 +2584,10 @@ PrefabInstance:
     - target: {fileID: 5846238952060879440, guid: 0441a8110e05647369b4618decc06701, type: 3}
       propertyPath: triggerInstruction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262036643779521851, guid: 0441a8110e05647369b4618decc06701, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 8270440157723580951, guid: 0441a8110e05647369b4618decc06701, type: 3}
       propertyPath: m_Size.x
@@ -4840,7 +4844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734283687826336048, guid: c04008a57d34047abadf0bdb3798fcd9, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13980,6 +13984,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2136077746949713582, guid: eb436d740000845cc856d2683e19d192, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 2606210949839001042, guid: eb436d740000845cc856d2683e19d192, type: 3}
       propertyPath: triggerDialogue.m_PersistentCalls.m_Calls.Array.size
       value: 1
