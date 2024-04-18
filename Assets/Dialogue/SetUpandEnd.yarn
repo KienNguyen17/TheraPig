@@ -9,6 +9,7 @@ Pig: *oink oink*
 title: StartKyle
 group: firstDay
 ---
+<<DeactivateCharacter kyleCharacterOpen0>>
 <<ActivateCharacter kyleCharacterOpen1>>
 <<PlayAnimation kyleCharacterOpen1>>
 Kyle: Mom? You there?
