@@ -38,7 +38,7 @@ public class spriteSwapper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q) && isInteractible) {
+        if (Input.GetKey(KeyCode.Space) && isInteractible) {
             triggerDialogue.Invoke();
         }
     }

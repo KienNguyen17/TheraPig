@@ -767,7 +767,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2429,7 +2429,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2724,11 +2724,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2201570757025972113, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.91
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2201570757025972113, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.14
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2201570757025972113, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2788,7 +2788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7687179102297801874, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 9038712474259430585, guid: e668bfa5c46ae47749c2b2c79fcd5b16, type: 3}
       propertyPath: m_Name
@@ -3123,7 +3123,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4011,7 +4011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1369992584775958248, guid: ef18b2519b3d04fa8a505bb419e14f46, type: 3}
       propertyPath: m_text
-      value: Press Q to end the day
+      value: Press SPACE to end the day?
       objectReference: {fileID: 0}
     - target: {fileID: 1369992584775958248, guid: ef18b2519b3d04fa8a505bb419e14f46, type: 3}
       propertyPath: m_fontSize
@@ -14270,7 +14270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1369992584775958248, guid: ef18b2519b3d04fa8a505bb419e14f46, type: 3}
       propertyPath: m_text
-      value: Press Q to interact
+      value: Press SPACE to interact
       objectReference: {fileID: 0}
     - target: {fileID: 1369992584775958248, guid: ef18b2519b3d04fa8a505bb419e14f46, type: 3}
       propertyPath: m_fontSize
@@ -14951,7 +14951,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -15247,7 +15247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1369992584775958248, guid: ef18b2519b3d04fa8a505bb419e14f46, type: 3}
       propertyPath: m_text
-      value: Press Q to pick up object
+      value: Press SPACE to pick up object
       objectReference: {fileID: 0}
     - target: {fileID: 1369992584775958248, guid: ef18b2519b3d04fa8a505bb419e14f46, type: 3}
       propertyPath: m_fontSize
@@ -15507,7 +15507,7 @@ Camera:
   m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
