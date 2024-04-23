@@ -31,6 +31,7 @@ Kyle: I'm not hungry.
 <<DeactivateCharacter kyleCharacterOpen1>>
 <<ActivateCharacter kyleCharacterExit1>>
 <<PlayAnimation kyleCharacterExit1>>
+<<fade Square>>
 **: THE NEXT DAY
 <<DeactivateCharacter kyleCharacterExit1>>
 <<DeactivateCharacter nancyCharacterExit1>>
@@ -81,6 +82,7 @@ group: secondDay
     <<ActivateCharacter nancyCharacterExit4>>
     <<PlayAnimation nancyCharacterExit4>>
 <<endif>>
+<<fade Square>>
 <<advance DialogueManager thirdSetUp>>
 ===
 
@@ -133,6 +135,7 @@ group: thirdDay
 <<PlayAnimation nancyGoodEndingOpen1>>
 Nancy: Thank you, little piggy. I'll send these in tomorrow.
 **: GOOD ENDING
+<<fade Square>>
 ===
 
 title: thirdBadEnd
@@ -150,6 +153,7 @@ Nancy: Oh give me that. I was gonna get to it.
 Kyle: They'll cut off our heating again if you keep forgetting to pay the bill. 
 Nancy: Well if you have nothing better to do, you can help me with them.
 **: BAD ENDING
+<<fade Square>>
 ===
 
 title: calendar
