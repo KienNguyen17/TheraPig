@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Yarn.Unity;
 
 public class newspaperDrop : MonoBehaviour
@@ -10,6 +11,7 @@ public class newspaperDrop : MonoBehaviour
     public int count;
     public Inventory GameInventory;
     InMemoryVariableStorage variableStorage;
+    public UnityEvent triggerDialogue;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,7 @@ public class newspaperDrop : MonoBehaviour
         if (GameInventory.newItem != null){
             count++;
             Debug.Log(GameInventory.newItem);
+            triggerDialogue.Invoke();
         } else {
             count--;
         }
