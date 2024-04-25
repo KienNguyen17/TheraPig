@@ -30,7 +30,7 @@ public class interactive : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && isInteractible) {
+        if (Input.GetKey(KeyCode.Q) && isInteractible) {
             PickedUp();
         }
         else if (Input.GetKey(KeyCode.Tab)) {

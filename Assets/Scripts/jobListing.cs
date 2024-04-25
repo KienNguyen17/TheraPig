@@ -22,7 +22,7 @@ public class jobListing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && isPicked) {
+        if (Input.GetKey(KeyCode.Q) && isPicked) {
             intoInventory.Invoke();
             isPicked = false;
         }

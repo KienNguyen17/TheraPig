@@ -19,7 +19,6 @@ public class newspaperDrop : MonoBehaviour
         // inventory = GameObject.FindObjectOfType<Inventory>();
         variableStorage = GameObject.FindObjectOfType<InMemoryVariableStorage>();
         variableStorage.TryGetValue("$secondEnd", out isGoodEnd);
-        Debug.Log(GameInventory.newItem);
     }
 
     // Update is called once per frame
