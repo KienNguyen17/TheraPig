@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 74674141}
   - component: {fileID: 74674140}
   m_Layer: 0
-  m_Name: CustomFurniture-v2_0
+  m_Name: Fridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2366,6 +2366,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
       value: 
@@ -2776,6 +2780,10 @@ PrefabInstance:
     - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
@@ -3429,6 +3437,10 @@ PrefabInstance:
     - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
@@ -4773,7 +4785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
@@ -5944,7 +5956,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1583798632, guid: 6d6e2ab39ef5145308ed006dbe9b0111, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7823,6 +7835,10 @@ PrefabInstance:
     - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
@@ -16401,7 +16417,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1381952636, guid: 6d6e2ab39ef5145308ed006dbe9b0111, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16473,6 +16489,10 @@ PrefabInstance:
     - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
@@ -17298,7 +17318,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1989171536, guid: 170144878fd714cedb7467238ee6c840, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18164,7 +18184,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1547009120, guid: 6d6e2ab39ef5145308ed006dbe9b0111, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19075,6 +19095,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
       value: 
@@ -19155,6 +19179,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
       value: 
@@ -19230,6 +19258,10 @@ PrefabInstance:
     - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
@@ -19600,6 +19632,10 @@ PrefabInstance:
     - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
@@ -20217,6 +20253,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
       value: 
@@ -20299,7 +20339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231036438978070740, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5839614740021690231, guid: 8f698f936e5244c8db38c11014393885, type: 3}
       propertyPath: timeLine
