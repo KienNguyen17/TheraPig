@@ -19,20 +19,13 @@ public class Fader : MonoBehaviour
     }
 
     [YarnCommand("fade")]
-    public void Fade() {
-        if (!isFading) {
-            renderer.color = new Color(0,0,0,1);
-            StartCoroutine(FadeIn()); 
-        }     
-    }
-
     public IEnumerator FadeIn() {
         isFading = true;
         for (float i=0; i<=1; i+=0.01f) {
             renderer.color = new Color(0,0,0,i);
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.03f);
         }
-        for (float i=1; i>0; i-=0.01f) {
+        for (float i=1; i>=0; i-=0.01f) {
             renderer.color = new Color(0,0,0,i);
             yield return new WaitForSeconds(0.03f);
         }
