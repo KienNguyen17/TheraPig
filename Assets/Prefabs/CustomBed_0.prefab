@@ -99,7 +99,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalSprite: {fileID: 1457129169, guid: efcd09137b78745308b107e3b5d34355, type: 3}
-  newSprite: {fileID: -65382682, guid: efcd09137b78745308b107e3b5d34355, type: 3}
+  newSprite: {fileID: 21300000, guid: 964aa85fd3a274f4ba5e2c02b45499ab, type: 3}
+  highlightState: 0
+  isInteractible: 0
+  triggerDialogue:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerInstruction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &7416533484577737377
 BoxCollider2D:
   m_ObjectHideFlags: 0
