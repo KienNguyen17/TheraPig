@@ -11,7 +11,7 @@ public class newspaperDrop : MonoBehaviour
     public int count;
     public Inventory GameInventory;
     InMemoryVariableStorage variableStorage;
-    public UnityEvent triggerDialogue;
+    public UnityEvent triggerDialogue, triggerDialogue1;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +39,7 @@ public class newspaperDrop : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision) {
         if (GameInventory.newItem != null){
+            triggerDialogue1.Invoke();
             count--;
         } else {
             count++;
