@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Workspaces/MainWorkspace/Main Scene.unity
     guid: 61f1dabe8e4e843bb8c2083a8a0392bc
+  - enabled: 1
+    path: Assets/Workspaces/MainWorkspace/Credit Scene.unity
+    guid: d83306302144142f1b74618b24f70624
   m_configObjects: {}

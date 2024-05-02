@@ -23,10 +23,6 @@ public class gameManager : MonoBehaviour
     }
 
     public void LoadScene(int index) {
-        if (!hasRun) {
-            SceneManager.LoadSceneAsync(index);
-            hasRun = true;
-        }
-       
+        SceneManager.LoadSceneAsync(index);
     }
 }
