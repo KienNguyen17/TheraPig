@@ -44,6 +44,7 @@ Kyle: I know, I know.
 <<DeactivateCharacter nancyCharacterOpen2>>
 <<ActivateCharacter nancyCharacterDay2Exit1>>
 <<PlayAnimation nancyCharacterDay2Exit1>>
+**: THE DAY BEGINS
 
 /// this variable determines the ending of the second day
 <<advance DialogueManager secondEnd>>
